@@ -1,0 +1,80 @@
+#home {
+  position: center;
+}
+
+#home:after {
+  content: "";
+  background-image: url('GallaryProfPic.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+#home:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#home h1,
+#home p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#home ul {
+  text-align: center; /* Center align the unordered lists */
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #f7df1e;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #0b0a00;
+}
+
+@media (max-width: 992px) {
+  #home h1 {
+    line-height: 1.8rem;
+  }
+
+  #home p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 24px;
+  }
+}
+
+* {
+  color: #464b51;
+  font-family: "Raleway", sans-serif;
+}
+
+hr {
+  border-top: 3px solid #f7df1e;
+  margin: 0 0 10px 0;
+}
+
